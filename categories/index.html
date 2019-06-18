@@ -551,10 +551,21 @@
 
 
 
-      
-      
-       
-    
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+   <script type="text/javascript">
+        var gitalk = new Gitalk({
+          clientID: '71fbb2e915754ca88e10',
+          clientSecret: '3237db7c6767df757a469191e94a2e77864ef85c',
+          repo: 'shadowfaxghh.github.io',
+          owner: 'github帐号',
+          admin: ['shadowfaxghh'],
+          id: location.pathname,
+          distractionFreeMode: 'true'
+        })
+        gitalk.render('gitalk-container')           
+       </script>
+
   
 
 
